@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Goodwill Industries</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    
+    <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#b-menu-1">-->
+
+    
+    <style>
+        
+        #maincontent{
+            max-width: 960;
+        }
+        
+        #easynav{
+            text-align: center;
+            
+        }
+        
+        #easynav > li{
+            display: inline;
+            border: 1px solid black;
+            font-size: 30px;
+            font-family:
+        }
+        
+        footer{
+            background-color: #4776A8;
+        }
+        
+        #address{
+            text-align: left;
+            color: white;
+        }
+        
+        #copyright{
+            font-size: 10px;
+            padding-right: 400px;
+        }
+        
+        #donate{
+            text-align: center;
+            padding: inherit;
+            padding: 50px;
+            color: white;
+            font-family: cursive;
+            border-radius: 100px;
+            margin-bottom: 10px;
+        }
+        
+        #findjob{
+            text-align: center;
+            padding: inherit;
+            padding: 60px;
+            font-family: cursive;
+            color: white;
+            border-radius: 100px;
+            margin-bottom: 10px;
+        }
+        
+        #locate{
+            text-align: center;
+            padding: inherit;
+            padding: 50px;
+            font-family: cursive;
+            color: white;
+            border-radius: 100px;
+            margin-bottom: 10px;
+        }
+        
+        .click{
+            display: inline-block;
+            text-align: center;
+            width: 350px;
+            font-size: 25px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        
+        .click>a{
+            color: black;
+        }
+        
+        a:hover{
+            text-decoration: none;
+            border-radius: 7px;
+            box-shadow: 0px 0px 10px 3px rgba(255,255,255,.75);
+            background: #fff;
+            color: #08a;
+        }
+        
+        .dropdown>a{
+            background-color: black;
+            
+        }
+        
+        .fa{
+            padding: 20px;
+            font-size: 30px;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+        
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        
+        .fa-youtube{
+            background: #007bb5;
+            color: white;
+        }
+        
+        .fa-pinterest {
+            background: #cb2027;
+            color: white;
+        }
+        
+        .fa-tumblr {
+            background: #2c4762;
+            color: white;
+        }
+        
+        .tag_line{
+            text-align: center;
+            color: #fff;
+            font-size: 31px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: #4575a7;
+            height: 47px;
+            padding-top: 5px;
+            margin: 10px;
+            line-height: 38px;
+        }
+        
+        .backtowork {
+            height: 192px;
+            margin: 10px;
+        }
+        
+        .backtowork {
+            background: #b5decc;
+            margin-top: 2px;
+            padding: 30px 0px 0px 0px;
+            text-align: center;
+            color: #11a573;
+        }
+        
+        .top_text {
+            font-size: 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .numberwork {
+            font-size: 67px;
+            color: #fff;
+            font-weight: bold;
+            line-height: 70px;
+            margin-bottom: 3px;
+        }
+        
+    
+        .large_text_block {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            line-height: 25px;
+        }
+        
+    </style>
+    
+    <div id="maincontent" class="container">
+<body>    
+   
+        <nav class="navbar navbar-inverse" style="background-color:#4776A8;">
+    <div class="container-fluid">
+     <div class="navbar-header">
+         
+         <a class="navbar-brand" href="#"><img alt="Goodwill Industries International, Inc." class="mobile_hide tablet_hide" src="http://www.goodwill.org/wp-content/themes/GII/images/general/header_logo.png"> </a>
+    </div>
+
+   
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+        
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: gold">Donate<span class="caret"></span></a>
+            
+        
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: gold">Find Job<span class="caret"></span></a></li>
+
+        
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: gold">Sign in to Account<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+        
+
+    <form>
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input id="email" type="text" class="form-control" name="email" placeholder="Email">
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input id="password" type="password" class="form-control" name="password" placeholder="Password">
+    </div>
+    </form>
+              
+         </ul>        
+      </li>
+        </ul>
+        
+    </div>
+</nav>
+
+    
+    <div>
+    <iframe id="video" class="container" width="560" height="315" src="https://www.youtube.com/embed/s_QdroYdxHk" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
+    <div class="tag_line">
+        Donate Stuff. Create Jobs.
+    </div>
+    
+    <div class="backtowork">
+    
+    <div class="top_text">
+        
+        This Year, Your Donated Stuff
+        
+        <br>
+        
+        Has Helped Goodwill Get
+        
+        <div class="numberwork">
+        
+        153,617
+            
+            <div class="large_text_block">
+            
+            People Back
+                
+                <br>
+                
+                To Work
+            
+            </div>
+        
+        </div>
+        
+        </div>
+    
+    </div>
+        
+    <div class="container-fluid">
+    <div class="row">
+        
+        <div class="col-sm-4, button">
+            <div class="click" style="background-color:#4AA574;"><a href="#" style="color: #4776A8;"><b>Donate Now</b></a></div>
+        <div id="donate" style="background-color: #4AA574">
+        <p id="p1">Last year, you helped local Goodwill organizations collectively place 312,000 people in employment in the United States and Canada. In addition, more than 35 million people used computers and mobile devices to access Goodwill education, training, mentoring and online learning services to strengthen their skills. Your impact doesn’t end there — the planet also benefits when you choose to ditch the dumpster and drop your items at Goodwill. Over the past few years alone, you’ve helped keep billions of pounds of clothing and household items out of landfills. How to Donate</p>
+
+        </div>
+        </div>    
+            
+        
+        <div class="col-sm-4, button">
+            <div class="click" style="background-color:#9D9FB5;"><a href="#" style="color: #4776A8;"><b>Find Job</b></a></div>
+        <div id="findjob" style="background-color:#9D9FB5;">
+        <p id="p2">At Goodwill, we believe everyone should have the opportunity to live independently, earn wages and achieve their dreams. We’re committed to helping you achieve your personal and professional goals, whether it’s earning a credential or degree, planning for your next career, polishing your job search and interview skills, getting your finances in order or overcoming a challenge specific to your experience or background.</p>
+        </div>
+        </div>
+            
+        <div class="col-sm-4, button">
+            <div class="click" style="background-color:#A59F4A;"><a href="locate.html" style="color: #4776A8;"><b>Locate</b></a></div>
+        <div id="locate" style="background-color: #A59F4A">
+        <p id="p3">Ready to connect with Goodwill® for your career, donation or shopping needs? Use our locator below to find the nearest career center, retail store, donation site, outlet store or headquarters operated by our  network of 162 independent, community-based Goodwills. Goodwill® is in the business of putting people to work. That’s why our own employees are so important to the critical work we do. We strive to recruit motivated, talented people who are passionate about their work and passionate about our mission.</p>
+            </div>
+        </div>
+  </div>
+</div>
+
+
+<!--<div id="donatetext" class="floating-box">
+<p>Last year, you helped local Goodwill organizations collectively place 312,000 people in employment in the United States and Canada. In addition, more than 35 million people used computers and mobile devices to access Goodwill education, training, mentoring and online learning services to strengthen their skills. Your impact doesn’t end there — the planet also benefits when you choose to ditch the dumpster and drop your items at Goodwill. Over the past few years alone, you’ve helped keep billions of pounds of clothing and household items out of landfills. How to Donate</p>
+    </div>
+    
+    <div id="findjobtext" class="floating-box">
+        <p>At Goodwill, we believe everyone should have the opportunity to live independently, earn wages and achieve their dreams. We’re committed to helping you achieve your personal and professional goals, whether it’s earning a credential or degree, planning for your next career, polishing your job search and interview skills, getting your finances in order or overcoming a challenge specific to your experience or background.</p>
+    </div>
+    
+    <div id="locatetext" class="floating-box">
+        <p>Ready to connect with Goodwill® for your career, donation or shopping needs? Use our locator below to find the nearest career center, retail store, donation site, outlet store or headquarters operated by our  network of 162 independent, community-based Goodwills. Goodwill® is in the business of putting people to work. That’s why our own employees are so important to the critical work we do. We strive to recruit motivated, talented people who are passionate about their work and passionate about our mission.</p>
+        
+    </div>-->  
+    
+    <footer>
+        <div id="address">
+        <p><b>Goodwill Industries International, Inc.</b></p>
+    
+    <p>15810 Indianila Drive<br>
+        Rockville, MD 20855<br>
+        (800) GOODWILL<br>
+        contactus@goodwill.org
+    </p>
+            
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="#" class="fa fa-tumblr"></a>
+
+            
+        <p id="copyright">"GOODWILL®" is a registered trademark of Goodwill Industries International, Inc. 
+            © <br>2017 Goodwill Industries International. All rights reserved.
+</p>
+            
+        </div>
+    </footer>
+
+</body>
+    </div>
+</html>
